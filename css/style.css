@@ -353,6 +353,25 @@ p {
   transform: translateY(-3px);
 }
 
+/* Dinner-party card with photo background */
+.dinner-card {
+  position: relative;
+  overflow: hidden;
+  border-color: transparent;
+  color: #fff;
+  padding: 0;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.7) 100%),
+    url('../images/pizza_stock_dinnerparty.jpg') center center / cover no-repeat;
+  min-height: 320px;
+}
+
+.dinner-card-inner {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
 .card-icon {
   width: 52px;
   height: 52px;
