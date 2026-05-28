@@ -666,11 +666,13 @@ p {
   background-color: #f9f9f9;
   padding: 3.5rem 2rem;
   border-bottom: 1px solid #ebebeb;
+  text-align: center;
 }
 
 .page-header h1 {
   font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   color: #483B54;
+  text-align: center;
 }
 
 .page-content {
