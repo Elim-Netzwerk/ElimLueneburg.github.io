@@ -310,10 +310,9 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: #006a91;
-  border-color: #006a91;
+  background-color: #1A9BCC;
+  border-color: #1A9BCC;
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(0, 129, 175, 0.3);
 }
 
 .btn-outline {
@@ -355,8 +354,11 @@ p {
   transform: translateY(-3px);
 }
 
-/* Dinner-party card with photo background */
-.dinner-card:hover {
+/* Static cards (no hover lift — purely informational) */
+.dinner-card:hover,
+.event-card:hover,
+.card--static:hover,
+.card--static.group-card:hover {
   transform: none;
   box-shadow: none;
 }
@@ -387,10 +389,6 @@ p {
 }
 
 .card-icon {
-  width: 52px;
-  height: 52px;
-  background-color: rgba(0, 129, 175, 0.1);
-  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -398,10 +396,10 @@ p {
 }
 
 .card-icon svg {
-  width: 26px;
-  height: 26px;
+  width: 36px;
+  height: 36px;
   stroke: #0081AF;
-  fill: none;
+  fill: #E6F2F7;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -528,10 +526,9 @@ p {
 }
 
 .btn-accent:hover {
-  background-color: #c94e12;
-  border-color: #c94e12;
+  background-color: #E97636;
+  border-color: #E97636;
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(224, 92, 26, 0.35);
 }
 
 .tag-gray {
