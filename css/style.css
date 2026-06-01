@@ -356,6 +356,11 @@ p {
 }
 
 /* Dinner-party card with photo background */
+.dinner-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
 .dinner-card {
   position: relative;
   overflow: hidden;
