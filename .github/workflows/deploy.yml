@@ -1,0 +1,31 @@
+name: Deploy to webgo24
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # full history for change detection
+
+      - name: Upload changed files via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server:   ${{ secrets.LUENEBURG_HOST }}
+          username: ${{ secrets.LUENEBURG_USER }}
+          password: ${{ secrets.LUENEBURG_PASSWORD }}
+          protocol: ftp           # use ftps if webgo24 supports FTP-over-TLS
+          port: 21
+          log-level: minimal      # do not echo file lists / details to the console
+          local-dir: ./
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/.claude/**
+            .gitignore
+            README*
