@@ -1,0 +1,10 @@
+Options -Indexes
+
+RewriteEngine on
+
+# Force non-www to www (https)
+RewriteCond %{HTTP_HOST} ^elimlueneburg\.de$ [NC]
+RewriteRule ^(.*)$ https://www.elimlueneburg.de/$1 [L,R=301]
+
+# /deine-kirche/ has no index page; send visitors to the Vision page
+RewriteRule ^deine-kirche/?$ https://www.elimlueneburg.de/deine-kirche/vision.html [L,R=301]
