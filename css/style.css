@@ -369,9 +369,7 @@ p {
   border-color: transparent;
   color: #fff;
   padding: 0;
-  background:
-    linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.7) 100%),
-    url('../images/pizza_stock_dinnerparty.jpg') center center / cover no-repeat;
+  background: linear-gradient(135deg, #483B54 0%, #0081AF 100%);
   min-height: 320px;
 }
 
