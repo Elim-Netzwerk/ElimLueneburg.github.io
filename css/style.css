@@ -236,7 +236,7 @@ p {
    =================================================== */
 .hero {
   background-color: #483B54;
-  background-image: url('../images/pexels-caleboquendo-34328517.jpg');
+  background-image: url('../images/worship_stock_header.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -370,8 +370,8 @@ p {
   color: #fff;
   padding: 0;
   background:
-    linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.7) 100%),
-    url('../images/pizza_stock_dinnerparty.jpg') center center / cover no-repeat;
+    linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.55) 100%),
+    url('../images/door_stock_communitysunday.jpg') center center / cover no-repeat;
   min-height: 320px;
 }
 
